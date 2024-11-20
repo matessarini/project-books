@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #fdf1dc; /* Substitua pela cor desejada */
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas para o fundo */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ee9252; /* Cor da parte que pode ser arrastada */
+    border-radius: 10px; /* Bordas arredondadas para o "thumb" */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor do "thumb" quando está sendo hover */
+}

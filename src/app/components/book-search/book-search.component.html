@@ -1,0 +1,30 @@
+<div class="search-container">
+  <div class="input-wrapper">
+      <input type="text" [(ngModel)]="query" placeholder="Digite o título, autor ou palavra-chave do livro" class="styled-input"
+          (keyup.enter)="searchBooks()" />
+      <span class="icon">🔍</span>
+  </div>
+</div>
+<div class="results-container">
+<li *ngFor="let book of books" class="book-item">
+  <div class="book-cover" *ngIf="book.volumeInfo.imageLinks?.thumbnail; else noImage">
+      <img [src]="book.volumeInfo.imageLinks.thumbnail" 
+           alt="{{ book.volumeInfo.title }} cover" />
+  </div>
+  <ng-template #noImage>
+      <div class="no-image">
+          Imagem não disponível
+      </div>
+  </ng-template>
+  <div class="book-info">
+      <div class="title">
+          <a [href]="book.volumeInfo.infoLink" target="_blank">{{ book.volumeInfo.title }}</a>
+      </div>
+      <p *ngIf="book.volumeInfo.authors" class="subtitle">Autores: {{ book.volumeInfo.authors.join(', ') }}</p>
+      <p *ngIf="book.volumeInfo.categories" class="subtitle">Gênero: {{ book.volumeInfo.categories.join(', ') }}</p>
+      <p *ngIf="book.volumeInfo.description" class="book-description">
+          Descrição: {{ book.volumeInfo.description }}
+      </p>
+  </div>
+</li>
+</div>

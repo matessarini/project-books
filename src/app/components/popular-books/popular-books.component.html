@@ -1,0 +1,11 @@
+<div class="livros-container">
+    <h2>Livros Mais Pesquisados</h2>
+    <div class="livros-lista">
+      <div class="livro" *ngFor="let livro of livros">
+        <img [src]="livro.capaUrl" alt="{{ livro.titulo }}" class="capa-livro" />
+        <p class="titulo-livro">
+          <a [href]="'https://books.google.com.br/books?id=' + livro.id" target="_blank">{{ livro.titulo }}</a>
+        </p>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+header {
+    background-color: #ee9252; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno */
+    position: fixed; /* Torna o cabeçalho fixo */
+    top: 0; /* Posiciona o cabeçalho no topo */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    width: 100%; /* Largura total */
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento */
+    text-align: center; /* Centraliza o texto */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+    padding: auto;
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: auto; /* Remove o sublinhado */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
