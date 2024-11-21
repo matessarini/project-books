@@ -9,50 +9,50 @@
 .livros-lista {
     display: flex;
     flex-direction: row;
-    /* Coluna para uma lista vertical */
+   
     gap: 40px;
-    /* Espaçamento entre os livros */
+   
 }
 
 .livro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centraliza os itens */
+   
     text-align: center;
-    /* Centraliza o texto */
+   
     max-width: 120px;
     margin-top: 60px;
-    /* Limita a largura do livro */
+   
 }
 
 .capa-livro {
     width: 90%;
-    /* Faz a imagem ocupar toda a largura do contêiner */
+   
     height: 150px;
-    /* Mantém a proporção da imagem */
+   
     border-radius: 8px;
-    /* Arredonda os cantos da imagem */
+   
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* Adiciona sombra */
+   
 }
 
 .titulo-livro {
     font-family: "Hanken Grotesk", sans-serif;
     margin-top: 10px;
-    /* Espaço entre a imagem e o título */
+   
     font-size: 14px;
-    /* Tamanho da fonte do título */
+   
     font-weight: bold;
-    /* Título em negrito */
+   
     text-align: center;
 }
 
 .titulo-livro a {
     text-decoration: none;
-    /* Remove o sublinhado do link */
+   
     color: inherit;
-    /* Faz com que a cor do link herde a cor do texto do pai */
+   
 }
 
 .titulo-livro a:hover {
@@ -70,9 +70,9 @@
 
 .glass-font a {
     text-decoration: none;
-    /* Remove o sublinhado do link */
+   
     color: inherit;
-    /* Faz com que a cor do link herde a cor do texto do pai */
+   
 }
 
 .glass-font a:hover {

@@ -16,11 +16,11 @@ export class BookSearchComponent {
     const apiUrl = 'https://www.googleapis.com/books/v1/volumes';
     const params = {
         q: this.query,
-        maxResults: 20, // Número máximo de resultados por requisição
+        maxResults: 20,
     };
 
     this.http.get(apiUrl, { params }).subscribe((response: any) => {
-        this.books = response.items; // Armazena os resultados
+        this.books = response.items; 
     });
   }
 

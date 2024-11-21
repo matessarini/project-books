@@ -3,62 +3,62 @@
 }
 
 .search-container {
-  display: flex; /* Usando flexbox para centralizar */
-  justify-content: center; /* Centraliza horizontalmente */
-  width: 100%; /* Ajuste conforme necessário */
-  margin-top: 20px; /* Espaçamento superior, se desejado */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .input-wrapper {
-  position: relative; /* Permite que o ícone seja posicionado dentro do input */
-  width: 500px; /* Largura total do campo de entrada */
+  position: relative;
+  width: 500px;
 }
 
 .styled-input {
   width: 90%;
-  height: 30px; /* Preenche o contêiner pai */
-  padding: 10px 40px 10px 10px; /* Espaçamento interno */
-  border: 2px solid #ccc; /* Cor e espessura da borda */
-  border-radius: 5px; /* Bordas arredondadas */
-  font-size: 16px; /* Tamanho da fonte */
-  transition: border-color 0.3s; /* Transição suave para a cor da borda */
+  height: 30px;
+  padding: 10px 40px 10px 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
 }
 
 .styled-input::placeholder {
-  color: #aaa; /* Cor do texto do placeholder */
-  font-style: italic; /* Estilo do texto do placeholder */
+  color: #aaa;
+  font-style: italic;
 }
 
 .styled-input:focus {
-  border-color: #ee9252; /* Cor da borda ao focar */
-  outline: none; /* Remove o contorno padrão */
+  border-color: #ee9252;
+  outline: none;
 }
 
 .icon {
-  position: absolute; /* Posiciona o ícone dentro do input */
-  right: 3px; /* Ajuste a posição do ícone à direita */
-  top: 50%; /* Centraliza verticalmente */
-  transform: translateY(-50%); /* Ajusta para centralizar exatamente */
-  pointer-events: none; /* Permite que cliques passem pelo ícone */
-  font-size: 18px; /* Tamanho do ícone */
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
 }
 
 .results-container {
-  margin-top: 60px; /* Espaço entre o input e os resultados */
-  width: 1000px; /* Cor de fundo para os resultados */
-  max-height: 400px; /* Altura máxima para a área de resultados */
-  overflow-y: auto; /* Adiciona rolagem se o conteúdo exceder a altura máxima */
+  margin-top: 60px;
+  width: 1000px;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .book-item {
-    display: flex; /* Utiliza flexbox para alinhar os itens */
-    margin-bottom: 20px; /* Espaçamento entre os itens */
+    display: flex;
+    margin-bottom: 20px;
   }
   
   .book-cover {
-    width: 150px; /* Largura da capa do livro */
-    height: 250px; /* Altura automática para manter a proporção */
-    margin-right: 20px; /* Espaçamento à direita da imagem */
+    width: 150px;
+    height: 250px;
+    margin-right: 20px;
   }
   
   .book-info {
@@ -68,8 +68,8 @@
   }
 
   .book-info a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: inherit; /* Faz com que a cor do link herde a cor do texto do pai */
+    text-decoration: none;
+    color: inherit;
 }
 
 .book-info a:hover {
@@ -77,27 +77,27 @@
 }
 
   .book-description {
-    display: -webkit-box; /* Utiliza um modelo de caixa flexível */
-    -webkit-box-orient: vertical; /* Define a orientação da caixa como vertical */
-    -webkit-line-clamp: 3; /* Limita a 3 linhas */
-    overflow: hidden; /* Oculta o texto que excede o limite */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
     text-overflow: ellipsis;
     font-family: "Hanken Grotesk", sans-serif;
     font-size: medium;
-    color: #777971; /* Adiciona reticências (...) ao final do texto cortado */
+    color: #777971;
   }
 
   .no-image {
-    width: 150px; /* Largura do retângulo */
+    width: 150px;
     height: 200px; 
     margin-right: 20px;/* Altura do retângulo */
-    border: 1px solid #ccc; /* Borda do retângulo */
-    display: flex; /* Usado para centralizar o texto */
-    align-items: center; /* Alinha o texto verticalmente */
-    justify-content: center; /* Alinha o texto horizontalmente */
-    text-align: center; /* Centraliza o texto */
-    color: white; /* Cor do texto */
-    background-color: #ee9252; /* Cor de fundo do retângulo */
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #ee9252;
 }
 
 .title {

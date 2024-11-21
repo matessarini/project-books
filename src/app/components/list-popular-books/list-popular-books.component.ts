@@ -7,19 +7,19 @@ import { BooksService } from '../../books-service.service';
   styleUrls: ['./list-popular-books.component.css']
 })
 export class ListPopularBooksComponent implements OnInit {
-  livros: any[] = []; // Inicializa a lista de livros
+  livros: any[] = [];
 books: any;
 
   constructor(private booksService: BooksService) { }
 
   ngOnInit() {
-    this.carregarLivros(); // Chama a função para carregar os livros
+    this.carregarLivros(); 
   }
 
   carregarLivros() {
     this.booksService.getBooks().subscribe(
       (data) => {
-        this.livros = data.items; // Armazena os livros retornados
+        this.livros = data.items; 
       },
       (error) => {
         console.error('Erro ao carregar livros', error);

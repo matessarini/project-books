@@ -17,7 +17,7 @@ export class CategoriesComponent {
 
   buscarLivros(genero: string): void {
     this.selectedGenero = genero;
-    this.livros = []; // Limpa a lista de livros ao selecionar um novo gênero
+    this.livros = []; 
     this.CategoriesService.getLivrosPorGenero(genero).subscribe(data => {
       this.livros = data.items || [];
     });

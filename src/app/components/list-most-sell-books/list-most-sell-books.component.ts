@@ -13,13 +13,13 @@ books: any;
   constructor(private booksService: BooksSellService) { }
 
   ngOnInit() {
-    this.carregarLivros(); // Chama a função para carregar os livros
+    this.carregarLivros(); 
   }
 
   carregarLivros() {
     this.booksService.getBooks().subscribe(
       (data) => {
-        this.livros = data.items; // Armazena os livros retornados
+        this.livros = data.items; 
       },
       (error) => {
         console.error('Erro ao carregar livros', error);

@@ -1,33 +1,33 @@
 header {
-    background-color: #ee9252; /* Cor de fundo do cabeçalho */
-    color: white; /* Cor do texto */
-    padding: 10px 0; /* Espaçamento interno */
-    position: absolute; /* Torna o cabeçalho fixo */
-    top: 0; /* Posiciona o cabeçalho no topo */
-    left: 0; /* Alinha o cabeçalho à esquerda */
-    width: 100%; /* Largura total */
+    background-color: #ee9252;
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
 }
 
 nav ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o preenchimento */
-    text-align: center; /* Centraliza o texto */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 15px; /* Espaçamento entre os itens */
+    display: inline;
+    margin: 0 15px;
     padding: auto;
 }
 
 nav ul li a {
-    color: white; /* Cor do texto dos links */
+    color: white;
     text-decoration: none;
     font-family: "Hanken Grotesk", sans-serif;
-    font-size: auto; /* Remove o sublinhado */
+    font-size: auto;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+    text-decoration: underline;
 }
