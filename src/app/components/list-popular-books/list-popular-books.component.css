@@ -1,0 +1,66 @@
+.results-container {
+    max-width: 900px; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+  
+  .livros-lista {
+    display: flex;
+    flex-direction: column; /* Utiliza flexbox para alinhar os itens */
+
+  }
+  
+  .livro {
+    display: flex; /* Permite que a imagem e as informações fiquem lado a lado */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    padding: 15px; /* Espaçamento interno para cada livro */
+    margin-bottom: 15px; /* Espaçamento entre cada livro */
+  }
+  
+  .capa-livro {
+    width: auto; /* Largura da capa do livro */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+  }
+  
+  .book-info {
+    max-width: 800px; /* Largura máxima para as informações do livro */
+    flex-grow: 1; /* Faz com que a informação do livro ocupe o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+
+  .book-description {
+    display: -webkit-box; /* Utiliza um modelo de caixa flexível */
+    -webkit-box-orient: vertical; /* Define a orientação da caixa como vertical */
+    -webkit-line-clamp: 3; /* Limita a 3 linhas */
+    overflow: hidden; /* Oculta o texto que excede o limite */
+    text-overflow: ellipsis;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: medium;
+    color: #777971; /* Adiciona reticências (...) ao final do texto cortado */
+  }
+
+  
+  .title {
+    font-size: 1.2em; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto do título */
+    font-weight: bold;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  
+  .title a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Faz com que a cor do link herde a cor do texto do pai */
+}
+
+.title a:hover {
+    color: #ee9252; 
+}
+
+  .subtitle {
+    font-family:"Hanken Grotesk", sans-serif;
+    font-size: medium; /* Tamanho da fonte dos subtítulos */
+    color: #666; /* Cor do texto dos subtítulos */
+  }
+  

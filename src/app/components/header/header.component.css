@@ -2,11 +2,11 @@ header {
     background-color: #ee9252; /* Cor de fundo do cabeçalho */
     color: white; /* Cor do texto */
     padding: 10px 0; /* Espaçamento interno */
-    position: fixed; /* Torna o cabeçalho fixo */
+    position: absolute; /* Torna o cabeçalho fixo */
     top: 0; /* Posiciona o cabeçalho no topo */
     left: 0; /* Alinha o cabeçalho à esquerda */
     width: 100%; /* Largura total */
-    z-index: 1000;
+
 }
 
 nav ul {

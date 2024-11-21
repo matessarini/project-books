@@ -1,0 +1,23 @@
+<div class="generos-container">
+  <div class="generos-list">
+    <button *ngFor="let genero of generos" (click)="buscarLivros(genero)">
+      {{ genero }}
+    </button>
+  </div>
+
+  <div *ngIf="selectedGenero" class="livros-container">
+    <div class="glass-font">Livros em {{ selectedGenero }}</div>
+    <div class="livros-list">
+      <div *ngFor="let livro of livros" class="livro">
+        <img *ngIf="livro.volumeInfo.imageLinks?.thumbnail" [src]="livro.volumeInfo.imageLinks.thumbnail" alt="{{ livro.volumeInfo.title }}">
+        <div>
+          <strong class="title">
+            <a [href]="livro.volumeInfo.infoLink" target="_blank">{{ livro.volumeInfo.title }}</a>
+          </strong><br>
+          <span class="subtitle" *ngIf="livro.volumeInfo.authors">Autores: {{ livro.volumeInfo.authors.join(', ') }}</span><br>
+          <span class="subtitle" *ngIf="livro.volumeInfo.publishedDate">Publicado em: {{ livro.volumeInfo.publishedDate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

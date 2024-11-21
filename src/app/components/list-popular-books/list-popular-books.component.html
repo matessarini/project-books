@@ -1,0 +1,19 @@
+<div class="results-container">
+  <div class="livros-lista">
+    <div *ngFor="let book of livros" class="livro">
+      <div class="book-info">
+        <img *ngIf="book.volumeInfo.imageLinks?.thumbnail" 
+             [src]="book.volumeInfo.imageLinks.thumbnail" 
+             alt="{{ book.volumeInfo.title }} - Capa" 
+             class="capa-livro">
+             <div class="title">
+              <a [href]="book.volumeInfo.infoLink" target="_blank">{{ book.volumeInfo.title }}</a>
+          </div>
+        <strong class="subtitle">Autores: {{ book.volumeInfo.authors?.join(', ') || 'Desconhecido' }}</strong><br>
+        <strong class="subtitle">Gênero: {{ book.volumeInfo.categories?.join(', ') || 'Desconhecido' }}</strong><br>
+        <strong class="book-description">Descrição: {{ book.volumeInfo.description || 'Sem descrição disponível.' }}</strong><br>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>

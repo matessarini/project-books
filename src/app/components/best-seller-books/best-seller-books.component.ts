@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-popular-books',
-  templateUrl: './popular-books.component.html',
-  styleUrls: ['./popular-books.component.css']
+  selector: 'app-best-seller',
+  templateUrl: './best-seller-books.component.html',
+  styleUrls: ['./best-seller-books.component.css']
 })
 
-export class PopularBooksComponent implements OnInit {
+export class BestSellerBooksComponent implements OnInit {
   livros: any[] = [];
 book: any;
 
@@ -17,7 +17,7 @@ book: any;
   }
 
   async buscarEbooksGratuitosPopulares() {
-    const resposta = await fetch(`https://www.googleapis.com/books/v1/volumes?q=free-ebooks&maxResults=8`);
+    const resposta = await fetch(`https://www.googleapis.com/books/v1/volumes?q=best+seller&maxResults=8`);
     const dados = await resposta.json();
     this.livros = dados.items.map((item: { id: any; volumeInfo: { title: any; imageLinks: { thumbnail: any; }; description: any; }; }) => ({
         id: item.id, // Captura o ID do volume

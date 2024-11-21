@@ -1,0 +1,34 @@
+.glass-font {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    letter-spacing: 6px;
+  }
+
+  .glass-font a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Faz com que a cor do link herde a cor do texto do pai */
+}
+
+.glass-font a:hover {
+    color: #ee9252; 
+}
+
+.hanken-grotesk {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #777971;
+  }
+
+  .main-content {
+    display: flex; /* Usa flexbox para centralizar */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */ /* Centraliza verticalmente */
+    height: calc(100vh - 60px); /* Ajusta a altura para ocupar a tela menos a altura do cabeçalho */
+    padding-top: 150px; /* Espaçamento superior */
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.6;
+}

@@ -1,0 +1,101 @@
+.generos-container {
+    max-width: 800px;
+    margin: 20px ;
+    padding: 20px;
+  }
+  
+  .generos-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .generos-list button {
+    background-color: #ee9252;
+    border-radius: 10px;
+    border-color: transparent;
+    width: auto;
+    height: auto;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .generos-list button:hover{
+    background-color: #95440b; 
+  }
+  
+  .livros-container {
+    margin-top: 20px;
+  }
+  
+  .livros-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .livro {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .livro img {
+    width: 150px;
+    height: 250px;
+    margin-right: 10px;
+  }
+
+  .glass-font {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 6px;
+  }
+
+  .p {
+    font-weight: 400;
+  }
+  
+  
+ 
+  .title {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: medium;
+    color: #777971;
+  }
+
+  .titulo-livro {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-top: 10px;
+    /* Espaço entre a imagem e o título */
+    font-size: 14px;
+    /* Tamanho da fonte do título */
+    font-weight: bold;
+    /* Título em negrito */
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    color: inherit;
+    /* Faz com que a cor do link herde a cor do texto do pai */
+}
+
+.title a:hover {
+    color: #ee9252;
+}
+

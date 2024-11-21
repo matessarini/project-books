@@ -1,6 +1,6 @@
 <div class="livros-container">
-    <div class="glass-font"> Ebooks Gratuitos </div>
-    <div class="hanken-grotesk"> Confira a Seleção de Títulos Digitais Gratuitos </div> 
+    <div class="glass-font"> Ebooks mais vendidos </div>
+    <div class="hanken-grotesk"> Confira a seleção de títulos digitais mais vendidos </div> 
     <div class="livros-lista">
       <div class="livro" *ngFor="let livro of livros">
         <img [src]="livro.capaUrl" alt="{{ livro.titulo }}" class="capa-livro" />
@@ -9,5 +9,5 @@
         </p>
       </div>
     </div>
-    <button class="ver-mais" routerLink="/ebooks-gratuitos">Confira o catálogo completo </button>
+    <button class="ver-mais" routerLink="/ebooks-vendidos">Confira o catálogo completo </button>
 </div>

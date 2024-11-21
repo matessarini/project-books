@@ -7,9 +7,14 @@ import { BookSearchComponent } from './components/book-search/book-search.compon
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { GenerosComponent } from './pages/generos/generos.component';
-import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PopularBooksComponent } from './components/popular-books/popular-books.component';
+import { BestSellerBooksComponent } from './components/best-seller-books/best-seller-books.component';
+import { FreeBooksComponent } from './pages/free-books/free-books.component';
+import { ListPopularBooksComponent } from './components/list-popular-books/list-popular-books.component';
+import { ListSellBooksComponent } from './components/list-most-sell-books/list-most-sell-books.component';
+import { SellBooksComponent } from './pages/sell-books/sell-books.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +22,12 @@ import { PopularBooksComponent } from './components/popular-books/popular-books.
     BookSearchComponent,
     HeaderComponent,
     GenerosComponent,
-    AboutComponent,
     HomeComponent,
-    PopularBooksComponent
+    PopularBooksComponent,
+    BestSellerBooksComponent,
+    FreeBooksComponent,
+    ListPopularBooksComponent, 
+    ListSellBooksComponent, SellBooksComponent, CategoriesComponent,
   ],
   imports: [
     BrowserModule,

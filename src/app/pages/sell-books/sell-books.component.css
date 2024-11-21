@@ -33,21 +33,6 @@
     line-height: 1.6;
 }
 
-.search-books {
-    margin-top: 50px; /* Ajuste o valor conforme necessário */
-}
-.img-books{
-  height: 700px;
-  width: 90%;
-}
-
-
-.about{
-background-color: #efcba5;
-width: 100%;
-height: 200px;
-}
-
 .space{
-padding-top: 180px;
-}
+    padding-top: 50px;
+    }
